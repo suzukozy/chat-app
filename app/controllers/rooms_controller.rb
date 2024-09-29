@@ -1,4 +1,8 @@
 class RoomsController < ApplicationController
+
+  def index
+  end
+  
   def create
     @room = Room.new(room_params)
     if @room.save
